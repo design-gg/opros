@@ -27,7 +27,7 @@
         
         .banners-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, 300px);
+            grid-template-columns: repeat(auto-fit, 320px);
             gap: 20px;
             padding: 0;
             align-items: flex-end;
@@ -38,7 +38,7 @@
         
         .banner-item {
             transition: transform 0.2s ease;
-            min-height: 500px; /* Стандартная высота баннера */
+            min-height: 480px; /* Стандартная высота баннера */
             padding:0;
             text-align:center;
 
@@ -47,7 +47,7 @@
     .banner-item-text {
         font-size: 12px;
         font-family: "Montserrat", sans-serif;
-        font-weight: 500;
+        font-weight: 480;
         color:#4C4F51;
         margin-bottom:20px;
     }
@@ -56,8 +56,8 @@
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             border:1px solid #B8C1C5;
-            width: 300px;
-            height: 500px;
+            width: 320px;
+            height: 4800px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -66,23 +66,23 @@
         }
         
         .banner-container canvas {
-            max-width: 300px;
-            max-height: 500px;
+            max-width: 320px;
+            max-height: 480px;
 
         }
         
-        @media (max-width: 300px) {
+        @media (max-width: 320px) {
             .banners-grid {
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
                 gap: 15px;
             }
             
             .banner-item {
-                height: 500px;
+                height: 480px;
             }
         }
         
-        @media (max-width: 300px) {
+        @media (max-width: 320px) {
             .banners-grid {
                 grid-template-columns: 1fr;
             }
@@ -103,9 +103,10 @@
     <script>
         // Конфигурация баннеров
         const bannersConfig = [
-            {name: 'banner1', folder: 'banners/banner-1/', htmlFile: 'index.html', width: 300, height: 500, text:"Версия #1. Анимация проигрывается бесконечно. Полный перезапуск сценария"},
-            {name: 'banner2', folder: 'banners/banner-2/', htmlFile: 'index.html', width: 300, height: 500, text:"Версия #2. Появление элементов снизу вверх проигрывается 1 раз. Иллюзия движения шара вверх"}, 
-            {name: 'banner3', folder: 'banners/banner-3/', htmlFile: 'index.html', width: 300, height: 500, text:"Версия #3. Более динамичный старт со сдвигом влево (проигрывается 1 раз). Иллюзия движения шара в горизонтальной плоскости"}, 
+            {name: 'red', folder: 'banners/red/', htmlFile: 'index.html', width: 330, height: 480, text:""},
+            {name: 'pink', folder: 'banners/pink/', htmlFile: 'index.html', width: 330, height: 480, text:""}, 
+            {name: 'green', folder: 'banners/green/', htmlFile: 'index.html', width: 330, height: 480, text:""}, 
+            {name: 'purple', folder: 'banners/purple/', htmlFile: 'index.html', width: 330, height: 480, text:""}, 
 
             
             // Добавляйте новые баннеры здесь по мере их создания
